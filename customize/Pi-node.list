@@ -1,0 +1,22 @@
+# NAME: Pi node
+DOMAIN-SUFFIX,pi.app
+DOMAIN-SUFFIX,piappengine.com
+DOMAIN-SUFFIX,minepi.com
+DOMAIN-SUFFIX,socialchain.app
+PROCESS-NAME,Pi Network.exe
+PROCESS-NAME,node.exe
+PROCESS-NAME,Docker Desktop.exe
+PROCESS-NAME,docker.exe
+PROCESS-NAME,com.docker.backend.exe
+PROCESS-NAME,com.docker.extensions.exe
+PROCESS-NAME,com.docker.build.exe
+PROCESS-NAME,com.docker.dev-envs.exe
+PROCESS-NAME,com.docker.extensions.exe
+# NAME: Docker
+DOMAIN,d1q6f0aelx0por.cloudfront.net
+DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+DOMAIN,d36jcksde1wxzq.cloudfront.net
+DOMAIN-SUFFIX,compose-spec.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,dockerhub.com
