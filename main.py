@@ -9,7 +9,7 @@ import ipaddress
 from io import StringIO
 
 # 映射字典
-MAP_DICT = {'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'host-suffix': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
+MAP_DICT = {'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'host-suffix': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain', 'PROCESS-NAME': 'process_name',
             'DOMAIN-KEYWORD':'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
             'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 
             'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'port',
@@ -139,7 +139,11 @@ def parse_list_file(link, output_directory):
                 rule_entry = {pattern: [address.strip() for address in addresses]}
                 result_rules["rules"].append(rule_entry)
                 # domain_entries.extend([address.strip() for address in addresses])  # 1.9以下的版本需要额外处理 domain_suffix
-            elif pattern == 'domain':
+            elif pattern == 'domain':    
+                 domain_entries.extend([address.strip() for address in addresses])
+            elif pattern == 'process_name':  # 添加对 PROCESS-NAME 的支持
+                rule_entry = {pattern: [address.strip() for address in addresses]}
+                result_rules["rules"].append(rule_entry)  # 将进程名称规则添加到结果中
                 domain_entries.extend([address.strip() for address in addresses])
             else:
                 rule_entry = {pattern: [address.strip() for address in addresses]}
