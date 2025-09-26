@@ -140,10 +140,10 @@ def parse_list_file(link, output_directory):
                 result_rules["rules"].append(rule_entry)
                 # domain_entries.extend([address.strip() for address in addresses])  # 1.9以下的版本需要额外处理 domain_suffix
             elif pattern == 'domain':    
-                 domain_entries.extend([address.strip() for address in addresses])
-            elif pattern == 'process_name':  # 添加对 PROCESS-NAME 的支持
+                domain_entries.extend([address.strip() for address in addresses])
+            elif pattern == 'process_name': 
                 rule_entry = {pattern: [address.strip() for address in addresses]}
-                result_rules["rules"].append(rule_entry)  # 将进程名称规则添加到结果中
+                result_rules["rules"].append(rule_entry) 
                 domain_entries.extend([address.strip() for address in addresses])
             else:
                 rule_entry = {pattern: [address.strip() for address in addresses]}
