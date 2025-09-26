@@ -2,10 +2,14 @@
   "rules": [
     {
       "domain": [
-        "compose-spec.io",
         "d1q6f0aelx0por.cloudfront.net",
         "d2wy8f7a9ursnm.cloudfront.net",
-        "d36jcksde1wxzq.cloudfront.net",
+        "d36jcksde1wxzq.cloudfront.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "compose-spec.io",
         "docker.com",
         "docker.io",
         "dockerhub.com",
@@ -16,17 +20,17 @@
       ]
     },
     {
-      "domain_suffix": [
-        ".compose-spec.io",
-        ".docker.com",
-        ".docker.io",
-        ".dockerhub.com",
-        ".minepi.com",
-        ".pi.app",
-        ".piappengine.com",
-        ".socialchain.app"
+      "process_name": [
+        "Docker Desktop.exe",
+        "Pi Network.exe",
+        "com.docker.backend.exe",
+        "com.docker.build.exe",
+        "com.docker.dev-envs.exe",
+        "com.docker.extensions.exe",
+        "docker.exe",
+        "node.exe"
       ]
     }
   ],
-  "version": 1
+  "version": 2
 }
