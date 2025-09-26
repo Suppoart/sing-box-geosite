@@ -1,8 +1,5 @@
 # NAME: Pi node
-DOMAIN-SUFFIX,pi.app
-DOMAIN-SUFFIX,piappengine.com
-DOMAIN-SUFFIX,minepi.com
-DOMAIN-SUFFIX,socialchain.app
+
 process_name,Pi Network.exe
 PROCESS-NAME,node.exe
 PROCESS-NAME,Docker Desktop.exe
