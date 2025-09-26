@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain": [
+        "Music",
         "aod-ssl.itunes.apple.com",
         "aod.itunes.apple.com",
         "audio-ssl.itunes.apple.com",
@@ -15,6 +16,11 @@
         "applemusic.com",
         "blobstore.apple.com",
         "music.apple.com"
+      ]
+    },
+    {
+      "process_name": [
+        "Music"
       ]
     }
   ],
